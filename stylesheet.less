@@ -58,17 +58,17 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     display: block;
     font-size: @font-swatch5-font-size;
     font-family: @font-swatch5-font-family;
-    color: @color-swatch3;
+    color: @font-swatch5-color;
     line-height: @font-swatch5-line-height;
     font-weight: @font-swatch5-font-weight;
 }
 
 .widget.profile a {
-    color: @color-swatch5;
+    color: @color-swatch4;
 }
 
 .widget.profile a:hover {
-    color: lighten(@color-swatch3,15%);
+    color: lighten(@font-swatch5-color,15%);
     text-decoration: none;
 }
 
@@ -598,7 +598,11 @@ footer.bk-footer span {
 .widget.button {
     padding: 0;
 }
-
+.widget.paypalbuynow .widget.button.paypal{
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
 .widget.dropbox button, .widget.tweet a, .widget.clicktocall a{
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -611,6 +615,11 @@ footer.bk-footer span {
 }
 .widget.tweet a{
   padding: 15px 20px 15px 40px;
+}
+.widget.paypalbuynow .widget.button.paypal:hover,
+.widget.dropbox button:hover,
+.widget.tweet a:hover, .widget.tweet a:active{
+  color: @color-swatch1;
 }
 .widget.button button
 {
@@ -651,7 +660,6 @@ footer.bk-footer span {
 {
     padding: 1em;
     overflow: hidden;
-    background-color: @color-swatch2;
 }
 
 .widget.content span.expand
@@ -738,7 +746,7 @@ footer.bk-footer span {
 .widget.gallery ul {
     display:block;
     margin: 0;
-    padding:0px;
+    padding: 1em 0 0;
     list-style: none;
 }
 
@@ -1564,7 +1572,10 @@ hr.line.align-right {
   box-shadow: 0 2px 0 @color-swatch4;
   margin-right: 1em;
 }
-
+.front-s .widget.button button:hover{
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+}
 /* ===============================
    IPAD WIDTH
    =============================== */
