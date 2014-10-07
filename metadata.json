@@ -2,7 +2,7 @@
     "name":"Infinite",
     "thumbnail":"infinite.png",
     "screenshot":"infinite.png",
-    "templateType":"general",
+    "templateType":"standard",
     "pageTypes":["default","home"],
     "tags": {
         "en": ["Business", "Trade", "company", "business", "corporate", "finance", "financial", "firm", "money", "simple"]        
